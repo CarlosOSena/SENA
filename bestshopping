@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Oswald", sans-serif;
+            background: white;
+        }
+
+        .container {
+            width: 1280px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .header {
+            background: #EEEDEB;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 600;
+            color: black;
+            text-shadow: 2px 2px 0 #EBA326, -1px -1px 0 #EBA326;
+        }
+
+        .login-button {
+            background: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .login-button:hover {
+            background: #ddd;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            width: 300px;
+            margin: 15px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="title">Best Shopping</span>
+            <button class="login-button">Iniciar Sesión</button>
+        </header>
+        <div class="main">
+            <div class="product">
+                <img src="imagenes/hogar.jpg" alt="Hogar">
+                <div class="product-info">Hogar</div>
+            </div>
+            <div class="product">
+                <img src="imagenes/ropa.jpg" alt="Ropa">
+                <div class="product-info">Ropa</div>
+            </div>
+            <div class="product">
+                <img src="imagenes/tecnologia.jpg" alt="Tecnología">
+                <div class="product-info">Tecnología</div>
+            </div>
+            <div class="product">
+                <img src="imagenes/zapatos.jpg" alt="Zapatos">
+                <div class="product-info">Zapatos</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
